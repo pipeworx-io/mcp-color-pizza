@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-color-pizza",
+  "version": "0.1.0",
+  "description": "Color Pizza MCP — names hex colors using human-friendly color-name lists.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "color-pizza"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-color-pizza"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
