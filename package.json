@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-color-pizza",
-  "version": "0.1.2",
-  "description": "Color Pizza MCP — names hex colors using human-friendly color-name lists.",
+  "version": "0.1.3",
+  "description": "Color Pizza MCP — names hex colors using human-friendly color-name lists. Wraps the keyless Color Pizza API (https://api.color.pizza/v1).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-1983a90c5f08a3264b3900f4822af734c13e3c681bf84ed39e729df8e26c69c6",
-    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
+    "sourceHash": "v1-7c95ad23a22cbf13c5fafaed5a81e7d193c1f21107155933321544e662a286e4",
+    "sourceCommit": "b0a4b8e2f3f5b3a4c3f9f2c9a73f91b20d32ce11"
   }
 }

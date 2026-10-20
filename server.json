@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/color-pizza",
   "title": "Color Pizza",
-  "description": "Color Pizza MCP — names hex colors using human-friendly color-name lists.",
-  "version": "0.1.2",
+  "description": "Color Pizza MCP — names hex colors using human-friendly color-name lists. Wraps the keyless Color…",
+  "version": "0.1.3",
   "websiteUrl": "https://pipeworx.io/packs/color-pizza",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-color-pizza",
