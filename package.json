@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-color-pizza",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Color Pizza MCP — names hex colors using human-friendly color-name lists. Wraps the keyless Color Pizza API (https://api.color.pizza/v1).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-color-pizza": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "color-pizza"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-color-pizza.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/color-pizza",
   "pipeworx": {
-    "sourceHash": "v1-51741b943c7b2b828a6b9ce4b194bd01b53d99de8012e3e1e26e05266b5ae228",
-    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
+    "mode": "gateway",
+    "slug": "color-pizza",
+    "gatewaySlug": "color-pizza",
+    "sourceHash": "v1-4040ebcbb920348631c2293041f70e5b93e1fb61d79171b4e564da997cffd45b",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }

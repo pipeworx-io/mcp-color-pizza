@@ -1,0 +1,50 @@
+[
+  {
+    "name": "name_colors",
+    "description": "Find the nearest human-friendly color name for one or more hex colors. Pass hex codes (with or without leading #), comma-separated for several at once. Returns the closest named color for each input, with its canonical hex, RGB, and perceptual distance. Optionally pick a naming list (e.g. \"wikipedia\", \"ntc\", \"x11\", \"html\", \"japaneseTraditional\", \"leCorbusier\", \"bestOf\"); defaults to \"default\". Use list_palettes to see all available lists.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "hex": {
+          "type": "string",
+          "description": "One or more hex colors, comma-separated. With or without #. e.g. \"ff0000\" or \"#ff0000,#00ff00\"."
+        },
+        "list": {
+          "type": "string",
+          "description": "Color-name list to use. Default \"default\". Other options: wikipedia, ntc, x11, html, japaneseTraditional, leCorbusier, bestOf, etc."
+        }
+      },
+      "required": [
+        "hex"
+      ]
+    }
+  },
+  {
+    "name": "search_color_names",
+    "description": "Search named colors whose name contains a substring (e.g. \"blue\", \"rose\", \"teal\"). Returns matching color names with their hex codes. Optionally restrict to a specific naming list (see list_palettes).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Substring to search color names for, e.g. \"blue\"."
+        },
+        "list": {
+          "type": "string",
+          "description": "Optional color-name list to search within. Default \"default\"."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "list_palettes",
+    "description": "List all available color-name lists (palettes) with their titles, descriptions, color counts, and licenses. Use this to discover valid values for the \"list\" argument of name_colors and search_color_names.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
